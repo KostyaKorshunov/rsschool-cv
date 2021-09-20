@@ -82,11 +82,11 @@ header h3 {
 section {
 	margin: 10px 10px 4px 40px;
 }
-section li[tp="tech"] {
+.li_tech {
 	list-style-type: "\1F4BB";
 	margin-bottom: 4px;
 }
-section li[tp="map"] {
+.li_map {
 	list-style-type: "\1F5FA";
 	margin-bottom: 4px;
 }
