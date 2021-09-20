@@ -1,0 +1,365 @@
+body {
+	min-width: 200px;
+	margin: 0px;
+	padding: 0px;
+	background-color: hsla(0, 0%, 80%, 0.1);
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row; 
+}
+
+.main-clm {
+    -webkit-flex: auto;
+    flex: auto;
+}
+.main-blk {
+	background-color: hsla(130, 0%, 90%, 0.8);
+}
+#LeftCol {
+	flex: 2;
+	background-color: hsla(130, 0%, 40%, 0.25);
+}
+#RightCol {
+	background-color: hsla(130, 0%, 80%, 0.25);
+	flex: 3;
+}
+#LLogo {
+	height: 400px;
+	background-color: hsla(130, 0%, 20%, 0.75);
+}
+#RLogo {
+	height: 400px;
+	background-color: hsla(130, 0%, 20%, 0.50);
+}
+#LCont {
+	padding-bottom:60px;	/*for footer */
+}
+#RCont {
+	padding-bottom:60px;	/*for footer */
+}
+/** ============	fol all 	================================== */
+header {
+	margin: 6px 2px 2px 2px;
+}
+header h3 {
+	margin: 2px 2px 2px 20px;
+	font-size: 18pt;
+	font-weight: 500;
+	font-family: Arial;
+	color: hsla(130, 0%, 100%, 0.99);
+	text-shadow: 1px 1px 2px hsla(130, 0%, 10%, 0.7),
+				 2px 2px 4px hsla(130, 0%, 20%, 0.7);
+}
+.hcc {
+	margin-left: 50px;
+	margin-bottom: 12px;
+}
+.chapt {
+	margin: 0px;
+	padding: 10px 2px;
+}
+.chapt_div {
+	display: grid;
+	margin: 12px 10px 6px 12px;
+	grid-template-columns: 120px auto;
+}
+.chapt_lang {
+	grid-template-columns: 100px auto;
+	min-width: 300px;
+}
+.chapt_grid-1,
+.chapt_grid-1r {
+	grid-column: 1 / 2;
+}
+.chapt_grid-2 {
+	grid-column: 2 / 2;
+}
+.chapt_grid-1r {
+	text-align: right;
+}
+section {
+	margin: 10px 10px 4px 40px;
+}
+.li_tech {
+	list-style-type: "\1F4BB";
+	margin-bottom: 4px;
+}
+.li_map {
+	list-style-type: "\1F5FA";
+	margin-bottom: 4px;
+}
+/** for languages */
+.lang {
+	display: inline-block;
+	height: 4px;
+	width: 160px;
+	margin: 8px 10px;
+	padding: 0;
+	border: 1px solid hsla(130, 0%, 20%, 0.60);
+}
+.lang div {
+	display: inline-block;
+	height: 4px;
+	margin: 0;
+	padding: 0;
+	background-color: hsla(130, 0%, 100%, 0.90);
+}
+/** ============	fol LLogo (top left) 	====================== */
+#i_img {
+	width: max-content;
+	height: max-content;
+	margin: 0px auto;
+}
+#i_img img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+.figcap {
+/*		background-color: black;	*/
+		color: hsla(130, 0%, 100%, 0.3);
+		font-style: italic;
+		padding: 2px;
+		text-align: center;
+}
+.aboutme {
+/*	width: min-content;*/
+	margin: 0px 20px;
+	padding: 2px 10px;
+	font-size: 11pt;
+	text-align: center;
+	color: hsla(130, 0%, 90%, 0.9);
+}
+/** ============	fol RLogo (top right) 	====================== */
+.my_nm {
+	width: max-content;
+	padding: 20px 2px 22px 8px;
+	margin: 0px auto;
+	color: hsla(130, 0%, 100%, 0.99);
+	text-shadow: 1px 1px 3px hsla(130, 0%, 10%, 0.9),
+				 2px 2px 5px hsla(130, 0%, 20%, 0.8);
+
+}
+.my_name {
+	display: inline-block;
+	margin: 20px 2px 2px 2px;
+	font-size: 28pt;
+	font-weight: bolder;
+}
+.my_surname {
+	display: inline-block;
+	margin: 2px 2px 12px 12px;
+	font-size: 26pt;
+	font-weight: bold;
+}
+.my_cont {
+	width: max-content;
+/*	margin: 0px auto;*/
+}
+.info_link {
+	margin: 0px 6px 0px 70px;
+	list-style-type: none;
+}
+.info_link::before {
+		content: "◦";
+		color:hsla(130, 0%, 100%, 0.9);
+		font-weight: bold;
+		display: inline-block;
+		width: 1em;
+		margin-left: -1em;
+}
+.info_link h4 {
+	display: inline-block;
+	width: 110px;
+	margin: 0px 0px 10px 8px;
+	font-size: 13pt;
+	color: hsla(130, 0%, 100%, 0.85);
+/*	color: hsla(130, 0%, 85%, 0.99);*/
+	text-shadow: 0px 1px 0px hsla(130, 0%, 20%, 0.9);
+}
+.info_link 	a,
+.info_link	span {
+	display: inline-block;
+	height: 28px;
+	text-decoration: none;
+	font-size: 13pt;
+/*	color: hsla(230, 80%, 20%, 0.90);*/
+	color: hsla(130, 0%, 100%, 0.90);
+	text-shadow: 0px 1px 0px hsla(130, 0%, 20%, 0.8),
+				 1px 2px 3px hsla(130, 0%, 10%, 0.8);	
+}
+.info_link a:hover {
+	color: hsla(130, 0%, 30%, 0.60);
+}
+.link_img {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: middle;
+}
+/** ============	fol RCont (bottom right) 	================== */
+.projs {
+	margin: 10px 12px 30px 12px;
+}
+.projs b,
+.projs h4,
+.projs p {
+	margin: 8px;
+	padding: 2px;
+}
+.projs b {
+	display: inline-block;
+	width: 45px;
+	margin-left: 40px;
+}
+@-moz-document url-prefix() {
+	.projs b {
+		width: 60px;
+	}
+}
+.notes {
+	margin: 10px 4px;
+	color: hsla(130, 0%, 40%, 0.9);
+}
+.code_cont {
+	margin: 0px 10px 20px 10px;
+}
+/** ============================================================== */
+/** ============	for different devices: for big	============ */
+@media all and (min-width: 881px){
+	body {
+		-webkit-flex-direction: row;
+		flex-direction: row; 
+	}
+	#ELeft {
+		display: block;
+		order: 1;
+	}
+	#ERight {
+		display: block;
+		order: 4;
+	}
+	#LeftCol {
+		position:relative;
+		min-height:100%;
+		width: auto;
+		min-width: 300px;
+		max-width: 600px;
+		order: 2;
+	}
+	#RightCol {
+		position:relative;
+		min-height:100%;
+		width: auto;
+		min-width: 500px;
+		max-width: 1000px;
+		order: 3;
+	}
+	#RCont {
+		display: block;
+	}
+	footer {
+		display: block;
+	}
+	#footer_small {
+		display: none;
+	}
+}
+/** ============	for different devices: for small	============ */
+@media all and (max-width: 880px){
+	body {
+		-webkit-flex-direction: column;
+		flex-direction: column; 
+	}
+	#ELeft {
+		display: none;
+		order: 3
+	}
+	#ERight {
+		display: none;
+		order: 4;
+	}
+	#LeftCol {
+		width: 100%;
+		min-width: 300px;
+		max-width: 800px;
+		order: 2;
+	}
+	#RightCol {
+		width: 100%;
+		min-width: 300px;
+		max-width: 800px;
+		order: 1;
+	}
+	#RCont {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+	#footer_small {
+		display: block;
+	}
+}
+/** ===============			other			====================== */
+.footer {
+	position:absolute;
+	bottom:0;
+	width: 100%;
+	height:60px;
+	text-align: center;
+	background-color: hsla(130, 0%, 50%, 0.1);	
+}
+#footer_small {
+	order: 6;
+	font-size: 24px;
+}
+.rss_img {
+	margin-top: 6px;
+	height: 48px;
+}
+.ft_text {
+	display:inline-block;
+	height: 36px;
+	vertical-align:text-bottom;
+	font-size: 14px;
+	color: white;
+}
+.ft_text_left {
+	display:inline-block;
+	height: 30px;
+	margin-top: 20px;
+	vertical-align:middle;
+	font-size: 15px;
+	color: hsla(130, 0%, 20%, 0.98);
+}
+.ft_text_left a {
+	text-decoration: none;
+	color: hsla(130, 0%, 20%, 0.3);
+}
+.ft_text_left a:hover {
+	color: hsla(130, 0%, 20%, 0.9);
+}
+.w_10p {
+	display: inline-block;
+	width: 10%;
+	margin: 0;
+	padding: 0;
+}
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
+}
+.clear_all,
+.clear_all>* {
+	  all:unset;
+}
