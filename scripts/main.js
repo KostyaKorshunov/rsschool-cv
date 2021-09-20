@@ -6,6 +6,4 @@
 //	alert( el_works.getAttribute("class") );
 
 // adaptiv flex	+-
-// burger		+++
-// add code		++++
-// 
+// burger		+++ 

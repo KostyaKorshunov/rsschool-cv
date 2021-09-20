@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles/styles.css" rel="stylesheet" >
   <script src="./scripts/main.js" defer ></script>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <title> CV </title>
 </head>
 <body>
@@ -65,14 +70,14 @@
 					<div class="chapt_grid-1r" >	Belarusian </div>
 					<div class="chapt_grid-2">
 						<div class="lang" >
-							<div style="width: 100px;">&nbsp;</div>
+							<div style="width: 115px;">&nbsp;</div>
 						</div>
 					</div>
 
 					<div class="chapt_grid-1r" >	Russian </div>
 					<div class="chapt_grid-2">
 						<div class="lang" >
-							<div style="width: 130px;">&nbsp;</div>
+							<div style="width: 140px;">&nbsp;</div>
 						</div>						
 					</div>
 
@@ -172,6 +177,47 @@
 					3
 				</article>
 			</div>
+
+			<div id="my_code" class="chapt">
+				<header>	<h3>My Code</h3>		</header>
+			<div class="h_clear">
+			<pre><code class="Java">
+ResultSet rso2;
+String wktar = "ARRAY[  ";
+Double area = 0.0;
+
+while( rso.next() ){
+	ArrayList<Double> bbox = new ArrayList<Double>();
+	String twkt = rso.getString("bgeom");
+
+	area += Double.parseDouble( rso.getString("barea") );
+
+	t_Q = "SELECT ST_Extent( ST_GeomFromText('"
+		+twkt
+		+"') ) as bextent ";
+	rso2 = statement2.executeQuery(t_Q);
+
+	if( rso2.next() ){
+		t_ext = rso2.getString("bextent");
+		t_ext = t_ext.replace("BOX(", "")
+			.replace(")", "")
+			.replace(",", " ");
+
+		String[] arext = t_ext.split(" ");
+		bbox.clear();
+
+		for( String ii : arext ){
+			bbox.add( Double.parseDouble(ii) );
+		}
+			lbox.add(bbox);
+	}
+	//----- добавляем geometry в массив WKT
+	wktar += "ST_GeomFromText('"+twkt+"'), ";
+}
+			</code></pre>
+			</div>
+			</div>
+				<br/>
 		</div>
 	<!-- =========================================================== -->
 		<footer class="footer">

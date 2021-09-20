@@ -19,24 +19,24 @@ body {
 }
 #LeftCol {
 	flex: 2;
+	background-color: hsla(130, 0%, 40%, 0.25);
 }
 #RightCol {
+	background-color: hsla(130, 0%, 80%, 0.25);
 	flex: 3;
 }
 #LLogo {
 	height: 400px;
-	background-color: hsla(130, 0%, 20%, 0.70);
+	background-color: hsla(130, 0%, 20%, 0.75);
 }
 #RLogo {
 	height: 400px;
-	background-color: hsla(130, 0%, 30%, 0.50);
+	background-color: hsla(130, 0%, 20%, 0.50);
 }
 #LCont {
-	background-color: hsla(130, 0%, 70%, 0.30);
 	padding-bottom:60px;	/*for footer */
 }
 #RCont {
-	background-color: hsla(130, 0%, 80%, 0.25);
 	padding-bottom:60px;	/*for footer */
 }
 /** ============	fol all 	================================== */
@@ -170,7 +170,7 @@ section li[tp="map"] {
 		width: 1em;
 		margin-left: -1em;
 }
-h4 {
+.info_link h4 {
 	display: inline-block;
 	width: 110px;
 	margin: 0px 0px 10px 8px;
@@ -179,8 +179,8 @@ h4 {
 /*	color: hsla(130, 0%, 85%, 0.99);*/
 	text-shadow: 0px 1px 0px hsla(130, 0%, 20%, 0.9);
 }
-.info_link 	a, 
-			span {
+.info_link 	a,
+.info_link	span {
 	display: inline-block;
 	height: 28px;
 	text-decoration: none;
@@ -334,4 +334,8 @@ h4 {
 	padding: 0 !important;
 	clip: rect(0 0 0 0) !important;
 	overflow: hidden !important;
-  }
+}
+.clear_all,
+.clear_all>* {
+	  all:unset;
+}
