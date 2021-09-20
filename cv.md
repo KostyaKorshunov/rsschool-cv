@@ -1,2 +1,2 @@
 # rsschool-cv
-project link: https://KostyaKorshunov.github.io/rsschool-cv/
+project link: https://KostyaKorshunov.github.io/rsschool-cv/cv
