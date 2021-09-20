@@ -1,0 +1,227 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	min-width: 200px;
+	background-color: hsla(0, 0%, 90%, 0.1);
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row; 
+}
+
+.main-clm {
+    -webkit-flex: auto;
+    flex: auto;
+}
+.main-blk {
+	background-color: hsla(130, 0%, 90%, 0.8);
+}
+#LeftCol {
+	flex: 2;
+}
+#RightCol {
+	flex: 3;
+}
+#LLogo {
+	height: 400px;
+	background-color: hsla(130, 0%, 20%, 0.7);
+}
+#RLogo {
+	height: 400px;
+	background-color: hsla(130, 0%, 30%, 0.50);
+}
+#LCont {
+	background-color: hsla(130, 0%, 70%, 0.2);
+}
+#RCont {
+	background-color: hsla(130, 0%, 80%, 0.1);
+}
+/** ============	fol all 	================================== */
+.hc {
+	margin-left: 20px;
+	font-size: 18pt;
+	font-weight: 500;
+	font-family: Arial;
+	color: hsla(130, 0%, 100%, 0.99);
+	text-shadow: 1px 1px 2px hsla(130, 0%, 10%, 0.7),
+				 2px 2px 4px hsla(130, 0%, 20%, 0.7);
+}
+.hcc {
+	margin-left: 40px;
+}
+.chapt {
+	margin: 0px;
+	padding: 10px 2px;
+}
+.chapt_div {
+	display: grid;
+	margin: 12px 10px 6px 12px;
+	grid-template-columns: 100px auto;
+}
+.chapt_grid-1 {
+	grid-column: 1 / 2;
+}
+.chapt_grid-2 {
+	grid-column: 2 / 2;
+}
+/** ============	fol LLogo (top left) 	====================== */
+#i_img {
+	width: max-content;
+	height: max-content;
+	margin: 0px auto;
+}
+#i_img img {
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+/*	box-shadow: 0px 0px 10px hsla(0, 0%, 10%, 0.9);*/
+}
+.aboutme {
+/*	width: min-content;*/
+	margin: 0px 20px;
+	padding: 2px 10px;
+	font-size: 11pt;
+	text-align: center;
+	color: hsla(130, 0%, 90%, 0.9);
+}
+/** ============	fol RLogo (top right) 	====================== */
+.my_nm {
+	width: max-content;
+	padding: 20px 2px 22px 8px;
+	margin: 0px auto;
+	color: hsla(130, 0%, 100%, 0.99);
+	text-shadow: 1px 1px 3px hsla(130, 0%, 10%, 0.9),
+				 2px 2px 5px hsla(130, 0%, 20%, 0.8);
+
+}
+.my_name {
+	display: inline-block;
+	margin: 20px 2px 2px 2px;
+	font-size: 32pt;
+	font-weight: bolder;
+}
+.my_surname {
+	display: inline-block;
+	margin: 2px 2px 12px 12px;
+	font-size: 30pt;
+	font-weight: bold;
+}
+.my_cont {
+	width: max-content;
+/*	margin: 0px auto;*/
+}
+.info_link {
+	margin: 2px 6px 4px 12px;
+}
+.info_link b {
+	display: inline-block;
+	width: 120px;
+	margin-left: 100px;
+	font-size: 12pt;
+	color: hsla(130, 0%, 100%, 0.70);
+/*	color: hsla(130, 0%, 85%, 0.99);*/
+/*	text-shadow: 0px 1px 0px hsla(130, 0%, 20%, 0.9);*/
+}
+.info_link 	a, 
+			span {
+	display: inline-block;
+	height: 24px;
+	text-decoration: none;
+	font-size: 13pt;
+/*	color: hsla(230, 80%, 20%, 0.90);*/
+	color: hsla(130, 0%, 100%, 0.90);
+	text-shadow: 0px 1px 0px hsla(130, 0%, 20%, 0.8),
+				 1px 2px 3px hsla(130, 0%, 10%, 0.8);	
+}
+.info_link a:hover {
+	color: hsla(230, 100%, 40%, 0.90);
+}
+.link_img {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: middle;
+}
+.works_cntr {
+/*	background-color: hsla(130, 0%, 50%, 0.8);	*/
+}
+/** ============	fol LCont (bottom left) 	================== */
+/** ============	fol RCont (bottom right) 	================== */
+/** ============================================================== */
+
+
+/** ============================================================== */
+/** ============	for different devices: for big	============ */
+@media all and (min-width: 801px){
+	body {
+		-webkit-flex-direction: row;
+		flex-direction: row; 
+	}
+	#ELeft {
+		display: block;
+		order: 1;
+	}
+	#ERight {
+		display: block;
+		order: 4;
+	}
+	#LeftCol {
+		width: auto;
+		min-width: 300px;
+		max-width: 600px;
+		order: 2;
+	}
+	#RightCol {
+		width: auto;
+		min-width: 500px;
+		max-width: 1000px;
+		order: 3;
+	}
+	#RCont {
+		display: block;
+	}
+}
+/** ============	for different devices: for small	============ */
+@media all and (max-width: 800px){
+	body {
+		-webkit-flex-direction: column;
+		flex-direction: column; 
+	}
+	#ELeft {
+		display: none;
+		order: 3
+	}
+	#ERight {
+		display: none;
+		order: 4;
+	}
+	#LeftCol {
+		width: 100%;
+		min-width: 300px;
+		max-width: 800px;
+		order: 2;
+	
+	}
+	#RightCol {
+		width: 100%;
+		min-width: 300px;
+		max-width: 800px;
+		order: 1;
+	}
+	#RCont {
+		display: none;
+	}
+}
+/** ===============			other			====================== */
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
+  }
