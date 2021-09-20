@@ -4,3 +4,8 @@
 	el_works.setAttribute("class", "works_cntr");
 
 //	alert( el_works.getAttribute("class") );
+
+// adaptiv flex	+-
+// burger		+++
+// add code		++++
+// 

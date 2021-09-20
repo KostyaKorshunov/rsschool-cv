@@ -17,9 +17,10 @@
 	<div id="LeftCol" class="main-clm main-blk">
 		<div id="LLogo" >
 			<br/>
-			<div id="i_img">
-				<img src="./images/i.jpg" />
-			</div>
+			<figure id="i_img">
+				<img src="./images/i.jpg" alt="" />
+				<figcaption class="figcap">My old photo</figcaption>
+			</figure>
 			<br/>
 			<div class="aboutme">
 				I am an expert in spatial data and geographic information systems development. I really enjoy learning new technologies and putting them into practice.
@@ -29,25 +30,27 @@
 	<!-- =========================================================== -->
 		<div id="LCont" >
 			<div id="skills" class="chapt">
-				<div class="hc">Skills</div>
-				<div class="chapt_ul">
+				<header>	<h3>Skills</h3>		</header>
+					<section>
 					<ul>
 						<li tp="tech"> &nbsp; HTML, CSS</li>
 						<li tp="tech"> &nbsp; JavaScript, JQuery</li>
 						<li tp="tech"> &nbsp; Java, Hibernate, JSF, REST</li>
 						<li tp="tech"> &nbsp; PostgreSQL, SQLite</li>
 					</ul>
+					</section>
+					<section>
 					<ul>
 						<li tp="map"> &nbsp; OpenLayers</li>
 						<li tp="map"> &nbsp; Geoserver</li>
 						<li tp="map"> &nbsp; PostGIS, SQLite Spatial, GSON, GML</li>
 						<li tp="map"> &nbsp; QGIS, ArcGIS</li>
-					</ul>					
-				</div>
+					</ul>
+					</section>
 			</div>
 
 			<div id="education" class="chapt">
-				<div class="hc">Education</div>
+				<header>	<h3>Education</h3>		</header>
 				<div class="chapt_div">
 					<div class="chapt_grid-1" >	1999 - 2004  </div>
 					<div class="chapt_grid-2"> State Agricultural Academy </div>
@@ -57,10 +60,33 @@
 			</div>
 
 			<div id="lang" class="chapt">
-				<div class="hc">Languages</div>
+				<header>	<h3>Languages</h3>		</header>
+				<div class="chapt_div chapt_lang">
+					<div class="chapt_grid-1r" >	Belarusian </div>
+					<div class="chapt_grid-2">
+						<div class="lang" >
+							<div style="width: 100px;">&nbsp;</div>
+						</div>
+					</div>
+
+					<div class="chapt_grid-1r" >	Russian </div>
+					<div class="chapt_grid-2">
+						<div class="lang" >
+							<div style="width: 130px;">&nbsp;</div>
+						</div>						
+					</div>
+
+					<div class="chapt_grid-1r" >	English </div>
+					<div class="chapt_grid-2">
+						<div class="lang" >
+							<div style="width: 15px;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<br/>
 		</div>
+	<!-- =========================================================== -->
 		<footer class="footer">
 			<a href="https://rs.school/js/">
 				<img class="rss_img" src="./images/rs_school_js.svg" >
@@ -76,63 +102,66 @@
 	<div id="RightCol" class="main-clm main-blk">
 		<div id="RLogo" >
 			<div class="my_nm">
-				<div class="my_name">Konstantin</div>
-				<div class="my_surname">Korshunov</div>
+				<h2 class="my_name">Konstantin</h2>
+				<h2 class="my_surname">Korshunov</h2>
 			</div>
 			<br/>
 		<div class="my_cont">
-			<div class="hc hcc" >Contacts</div>
-
-			<div class="info_link" >
-				<b>Location</b>
+			<header>	<h3 class="hcc">Contacts</h3>		</header>
+			<ul>
+			<li class="info_link" >
+				<h4>Location</h4>
 				<span>Minsk, Belarus</span>
-			</div>
+			</li>
 
-			<div class="info_link" >
-				<b>Phone</b>
+			<li class="info_link" >
+				<h4>Phone</h4>
 				<span>+375-29-638-17-25</span>
-			</div>
+			</li>
 
-			<div class="info_link" >
-				<b>Discord</b>
+			<li class="info_link" >
+				<h4>Discord</h4>
 				<a href="https://discord.com/channels/@KostyaKorshunov#2109"
 						title="Discord">
 					<img class="link_img" src="./images/discord.png" >
 					KostyaKorshunov#2109
 				</a>
-				<br/>
+			</li>
 
-				<b>GitHub</b>
+			<li class="info_link" >
+				<h4>GitHub</h4>
 				<a href="https://github.com/KostyaKorshunov"
 						title="GitHub">
 					<img class="link_img" src="./images/github.png" >
 					KostyaKorshunov
 				</a>
-				<br/>
+			</li>
 	
-				<b>Linkedid</b>	
+			<li class="info_link" >
+				<h4>Linkedid</h4>	
 				<a href="https://www.linkedin.com/in/константин-коршунов-ab051513a/"
 						title="Linkedid">
 					<img class="link_img" src="./images/linkedin.png" >
 					Konstantin Korshunov
 				</a>
-				<br/>
+			</li>
 
-				<b>Viber</b>
+			<li class="info_link" >
+				<h4>Viber</h4>
 				<a href="https://www.viber.com/en/" 
 						title="Viber">
 					<img class="link_img" src="./images/viber-logo.png" >
 					+375296381725
 				</a>
-
-			</div>
+			</li>
+			</ul>
 		</div>
 
 		</div>
-		<!-- =========================================================== -->
+	<!-- =========================================================== -->
 		<div id="RCont">
 			<div id="proj" class="chapt">
-				<div class="hc">Projects</div>
+				<header>	<h3>Projects</h3>		</header>
 				<article>
 					1
 				</article>
@@ -144,6 +173,7 @@
 				</article>
 			</div>
 		</div>
+	<!-- =========================================================== -->
 		<footer class="footer">
 			<div class="ft_text_left">
 			<b>GitHub</b>
