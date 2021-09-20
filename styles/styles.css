@@ -113,8 +113,8 @@ section li[tp="map"] {
 	margin: 0px auto;
 }
 #i_img img {
-	width: 260px;
-	height: 260px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 }
 .figcap {
@@ -200,8 +200,32 @@ section li[tp="map"] {
 	margin: 0px;
 	vertical-align: middle;
 }
-.works_cntr {
-/*	background-color: hsla(130, 0%, 50%, 0.8);	*/
+/** ============	fol RCont (bottom right) 	================== */
+.projs {
+	margin: 10px 12px 30px 12px;
+}
+.projs b,
+.projs h4,
+.projs p {
+	margin: 8px;
+	padding: 2px;
+}
+.projs b {
+	display: inline-block;
+	width: 45px;
+	margin-left: 40px;
+}
+@-moz-document url-prefix() {
+	.projs b {
+		width: 60px;
+	}
+}
+.notes {
+	margin: 10px 4px;
+	color: hsla(130, 0%, 40%, 0.9);
+}
+.code_cont {
+	margin: 0px 10px 20px 10px;
 }
 /** ============================================================== */
 /** ============	for different devices: for big	============ */

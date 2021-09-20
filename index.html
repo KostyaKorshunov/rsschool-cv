@@ -167,29 +167,73 @@
 		<div id="RCont">
 			<div id="proj" class="chapt">
 				<header>	<h3>Projects</h3>		</header>
-				<article>
-					1
+				<article class="projs">
+					<h4>2013..</h4>
+						<p>Directly carried out several dozen projects for the creation,
+						 modernization, enhancement of functionality and maintenance of GIS MGCIU 
+						 in the state utility unitary enterprise "Minsk City Center for Engineering Services" 
+						 (КУП «Минский городской центр инжиниринговых услуг»).
+						</p>
+					<div class="status">
+						<b>status:</b>
+						GIS developer, spatial data specialist, full-stack developer
+					</div>
+					<div class="stack">
+						<b>stack:</b>
+						JavaEE, Hibernate, JavaSE, JavaScript, HTML, CSS, 
+						PostgreSQL/PostGIS, SQLite/SQLite Spatial, JSON/GSON, XML/GML,
+						Geoserver, OpenLayers, TomEE/Tomcat, QGIS, AutoCAD and others
+					</div>
+					<div class="notes">
+						Link on the system (private):
+						<a href="http://er.mgciu.by:8888/er/">ER MGCIU</a>, 
+						link on the MGCIU:
+						<a href="http://mgciu.by/">MGCIU.by</a>
+					</div>
 				</article>
-				<article>
-					2
+				<article class="projs">
+					<h4>2005..2014</h4>
+						<p>I was the head and / or developer of several desktop applications and GIS systems when I worked at BelNITszem
+						 (РУП «БелНИЦзем» Беларусский научно-исследовательский центр по землеустройству, геодезии и картографии при Госудапрственном комитете по имуществу Республики Беларусь).
+						</p>
+					<div class="status">
+						<b>status:</b>
+						Desktop software engineer, spatial data specialist, GIS developer
+					</div>
+					<div class="stack">
+						<b>stack:</b>
+						ArcGIS Desktop, ArcGIS Server, MS Visual C++ with MFC, PostgreSQL/PostGIS, JavaScript, HTML, CSS, PHP,
+						Geoserver, OpenLayers, and others
+					</div>
+					<div class="notes">
+					</div>
 				</article>
-				<article>
-					3
+				<article class="projs">
+					<h4>2002..2014</h4>
+						<p>I have been a leader, developer or participant in more than two dozen projects
+							 in land management, spatial data, SDI, land registry, geodesy and digital crtography at BelNICzem.
+						</p>
+					<div class="status">
+						<b>status:</b>
+						Research Fellow, Junior Research Fellow, GIS specialist, spatial data specialist, GIS developer
+					</div>
+					<div class="notes">
+					</div>
 				</article>
 			</div>
 
 			<div id="my_code" class="chapt">
 				<header>	<h3>My Code</h3>		</header>
-			<div class="h_clear">
-			<pre><code class="Java">
-ResultSet rso2;
+			<div class="code_cont">
+			<pre><code class="Java">ResultSet rso2;
 String wktar = "ARRAY[  ";
 Double area = 0.0;
 
-while( rso.next() ){
+while( rso.next() ){	// только для выбранных
 	ArrayList<Double> bbox = new ArrayList<Double>();
+		// получаем геометрию в виде текста - WKT
 	String twkt = rso.getString("bgeom");
-
+		// сумма общей площади
 	area += Double.parseDouble( rso.getString("barea") );
 
 	t_Q = "SELECT ST_Extent( ST_GeomFromText('"
@@ -198,18 +242,21 @@ while( rso.next() ){
 	rso2 = statement2.executeQuery(t_Q);
 
 	if( rso2.next() ){
-		t_ext = rso2.getString("bextent");
-		t_ext = t_ext.replace("BOX(", "")
+			// форматирование BBOX->X0 Y0 X1 Y1
+		t_ext = rso2.getString("bextent")
+			.replace("BOX(", "")
 			.replace(")", "")
 			.replace(",", " ");
 
 		String[] arext = t_ext.split(" ");
+
 		bbox.clear();
 
 		for( String ii : arext ){
 			bbox.add( Double.parseDouble(ii) );
 		}
 			lbox.add(bbox);
+		// на выходе: Array(X0, Y0, X1, Y1)
 	}
 	//----- добавляем geometry в массив WKT
 	wktar += "ST_GeomFromText('"+twkt+"'), ";
