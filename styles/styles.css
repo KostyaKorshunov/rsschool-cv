@@ -48,7 +48,8 @@ body {
 				 2px 2px 4px hsla(130, 0%, 20%, 0.7);
 }
 .hcc {
-	margin-left: 40px;
+	margin-left: 50px;
+	margin-bottom: 12px;
 }
 .chapt {
 	margin: 0px;
@@ -57,7 +58,7 @@ body {
 .chapt_div {
 	display: grid;
 	margin: 12px 10px 6px 12px;
-	grid-template-columns: 100px auto;
+	grid-template-columns: 120px auto;
 }
 .chapt_grid-1 {
 	grid-column: 1 / 2;
@@ -128,14 +129,14 @@ body {
 	width: 120px;
 	margin-left: 100px;
 	font-size: 12pt;
-	color: hsla(130, 0%, 100%, 0.70);
+	color: hsla(130, 0%, 100%, 0.85);
 /*	color: hsla(130, 0%, 85%, 0.99);*/
-/*	text-shadow: 0px 1px 0px hsla(130, 0%, 20%, 0.9);*/
+	text-shadow: 0px 1px 0px hsla(130, 0%, 20%, 0.9);
 }
 .info_link 	a, 
 			span {
 	display: inline-block;
-	height: 24px;
+	height: 28px;
 	text-decoration: none;
 	font-size: 13pt;
 /*	color: hsla(230, 80%, 20%, 0.90);*/
