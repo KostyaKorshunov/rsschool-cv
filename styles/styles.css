@@ -68,6 +68,12 @@ body {
 .chapt_ul {
 	margin: 12px 10px 6px 12px;
 }
+.chapt_ul li[tp="tech"] {
+	list-style-type: "\1F4BB";
+}
+.chapt_ul li[tp="map"] {
+	list-style-type: "\1F5FA";
+}
 /** ============	fol LLogo (top left) 	====================== */
 #i_img {
 	width: max-content;
