@@ -1,7 +1,7 @@
 body {
+	min-width: 200px;
 	margin: 0px;
 	padding: 0px;
-	min-width: 200px;
 	background-color: hsla(0, 0%, 90%, 0.1);
 
     display: -webkit-flex;
@@ -19,9 +19,13 @@ body {
 }
 #LeftCol {
 	flex: 2;
+/*	display: grid;
+	grid-template-rows: 400px auto 80px;*/
 }
 #RightCol {
 	flex: 3;
+/*	display: grid;
+	grid-template-rows: 400px auto 80px;*/
 }
 #LLogo {
 	height: 400px;
@@ -33,9 +37,11 @@ body {
 }
 #LCont {
 	background-color: hsla(130, 0%, 70%, 0.2);
+	padding-bottom:60px;	/*for footer */
 }
 #RCont {
 	background-color: hsla(130, 0%, 80%, 0.1);
+	padding-bottom:60px;	/*for footer */
 }
 /** ============	fol all 	================================== */
 .hc {
@@ -145,7 +151,7 @@ body {
 				 1px 2px 3px hsla(130, 0%, 10%, 0.8);	
 }
 .info_link a:hover {
-	color: hsla(230, 100%, 40%, 0.90);
+	color: hsla(130, 0%, 30%, 0.60);
 }
 .link_img {
 	width: 20px;
@@ -164,7 +170,7 @@ body {
 
 /** ============================================================== */
 /** ============	for different devices: for big	============ */
-@media all and (min-width: 801px){
+@media all and (min-width: 881px){
 	body {
 		-webkit-flex-direction: row;
 		flex-direction: row; 
@@ -178,12 +184,16 @@ body {
 		order: 4;
 	}
 	#LeftCol {
+		position:relative;
+		min-height:100%;
 		width: auto;
 		min-width: 300px;
 		max-width: 600px;
 		order: 2;
 	}
 	#RightCol {
+		position:relative;
+		min-height:100%;
 		width: auto;
 		min-width: 500px;
 		max-width: 1000px;
@@ -192,9 +202,15 @@ body {
 	#RCont {
 		display: block;
 	}
+	footer {
+		display: block;
+	}
+	#footer_small {
+		display: none;
+	}
 }
 /** ============	for different devices: for small	============ */
-@media all and (max-width: 800px){
+@media all and (max-width: 880px){
 	body {
 		-webkit-flex-direction: column;
 		flex-direction: column; 
@@ -212,7 +228,6 @@ body {
 		min-width: 300px;
 		max-width: 800px;
 		order: 2;
-	
 	}
 	#RightCol {
 		width: 100%;
@@ -223,8 +238,58 @@ body {
 	#RCont {
 		display: none;
 	}
+	footer {
+		display: none;
+	}
+	#footer_small {
+		display: block;
+	}
 }
 /** ===============			other			====================== */
+.footer {
+	position:absolute;
+	bottom:0;
+	width: 100%;
+	height:60px;
+	text-align: center;
+	background-color: hsla(130, 0%, 50%, 0.1);	
+}
+#footer_small {
+	order: 6;
+	font-size: 24px;
+}
+.rss_img {
+	margin-top: 6px;
+	height: 48px;
+}
+.ft_text {
+	display:inline-block;
+	height: 36px;
+	vertical-align:text-bottom;
+	font-size: 14px;
+	color: white;
+}
+.ft_text_left {
+	display:inline-block;
+	height: 30px;
+	margin-top: 20px;
+	vertical-align:middle;
+	font-size: 15px;
+	color: hsla(130, 0%, 20%, 0.98);
+}
+.ft_text_left a {
+	text-decoration: none;
+	color: hsla(130, 0%, 20%, 0.3);
+}
+.ft_text_left a:hover {
+	color: hsla(130, 0%, 20%, 0.9);
+}
+.w_10p {
+	display: inline-block;
+	width: 10%;
+	margin: 0;
+	padding: 0;
+}
 .visually-hidden {
 	position: absolute !important;
 	width: 1px !important;
