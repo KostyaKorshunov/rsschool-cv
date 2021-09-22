@@ -9,7 +9,7 @@ body {
 /*    -webkit-flex-direction: row;
     flex-direction: row;	*/
 }
-body>* {
+body * {
 	margin: 0px;
 	padding: 0px;
 }
@@ -107,7 +107,7 @@ body>* {
 	text-shadow: 1px 1px 3px hsla(130, 0%, 10%, 0.9),
 				 2px 2px 5px hsla(130, 0%, 20%, 0.8);
 }
-.my_nm>* {
+.my_nm * {
 	display: inline-block;
 	margin: 2px;
 }
@@ -413,6 +413,6 @@ header h3 {
 	overflow: hidden !important;
 }
 .clear_all,
-.clear_all>* {
+.clear_all * {
 	  all:unset;
 }
