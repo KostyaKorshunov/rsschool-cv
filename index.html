@@ -13,14 +13,12 @@
 </head>
 <body>
 	<!-- ========				Empty Left					======== -->
-	<div id="ELeft" class="main-clm">
+	<div id="ELeft">
 	</div>
 	<!-- =========================================================== -->
-	<!-- ========				Left column					======== -->
-	<!-- =========================================================== -->
-	<div id="LeftCol" class="main-clm main-blk">
+	<!-- ========				CENTER						======== -->
+	<div id="center">
 		<div id="LLogo" >
-			<br/>
 			<figure id="i_img">
 				<img src="./images/i.jpg" alt="" />
 				<figcaption class="figcap">My old photo</figcaption>
@@ -32,74 +30,6 @@
 			
 		</div>
 	<!-- =========================================================== -->
-		<div id="LCont" >
-			<div id="skills" class="chapt">
-				<header>	<h3>Skills</h3>		</header>
-					<ul>
-						<li class="li_tech"> &nbsp; HTML, CSS</li>
-						<li class="li_tech"> &nbsp; JavaScript, JQuery</li>
-						<li class="li_tech"> &nbsp; Java, Hibernate, JSF, REST</li>
-						<li class="li_tech"> &nbsp; PostgreSQL, SQLite</li>
-					</ul>
-					<ul>
-						<li class="li_map"> &nbsp; OpenLayers</li>
-						<li class="li_map"> &nbsp; Geoserver</li>
-						<li class="li_map"> &nbsp; PostGIS, SQLite Spatial, GSON, GML</li>
-						<li class="li_map"> &nbsp; QGIS, ArcGIS</li>
-					</ul>
-			</div>
-
-			<div id="education" class="chapt">
-				<header>	<h3>Education</h3>		</header>
-				<div class="chapt_div">
-					<div class="chapt_grid-1" >	1999 - 2004  </div>
-					<div class="chapt_grid-2"> State Agricultural Academy </div>
-					<div class="chapt_grid-2"> Land Management Faculty </div>
-
-				</div>
-			</div>
-
-			<div id="lang" class="chapt">
-				<header>	<h3>Languages</h3>		</header>
-				<div class="chapt_div chapt_lang">
-					<div class="chapt_grid-1r" >	Belarusian </div>
-					<div class="chapt_grid-2">
-						<div class="lang" >
-							<div style="width: 115px;">&nbsp;</div>
-						</div>
-					</div>
-
-					<div class="chapt_grid-1r" >	Russian </div>
-					<div class="chapt_grid-2">
-						<div class="lang" >
-							<div style="width: 140px;">&nbsp;</div>
-						</div>						
-					</div>
-
-					<div class="chapt_grid-1r" >	English </div>
-					<div class="chapt_grid-2">
-						<div class="lang" >
-							<div style="width: 15px;">&nbsp;</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br/>
-		</div>
-	<!-- =========================================================== -->
-		<footer class="footer">
-			<a href="https://rs.school/js/">
-				<img class="rss_img" src="./images/rs_school_js.svg" alt="" >
-			</a>
-			<div class="w_10p" > &nbsp; </div>
-			<div class="ft_text"> 2021 © K.Korshunov </div>	<!--  ©  -->
-			
-		</footer>
-	</div>
-	<!-- =========================================================== -->
-	<!-- ========				Right column				======== -->
-	<!-- =========================================================== -->
-	<div id="RightCol" class="main-clm main-blk">
 		<div id="RLogo" >
 			<div class="my_nm">
 				<h2 class="my_name">Konstantin</h2>
@@ -158,6 +88,61 @@
 		</div>
 
 		</div>
+	<!-- =========================================================== -->
+	<div id="LCont" >
+		<div id="skills" class="chapt">
+			<header>	<h3>Skills</h3>		</header>
+				<ul>
+					<li class="li_tech"> &nbsp; HTML, CSS</li>
+					<li class="li_tech"> &nbsp; JavaScript, JQuery</li>
+					<li class="li_tech"> &nbsp; Java, Hibernate, JSF, REST</li>
+					<li class="li_tech"> &nbsp; PostgreSQL, SQLite</li>
+				</ul>
+				<ul>
+					<li class="li_map"> &nbsp; OpenLayers</li>
+					<li class="li_map"> &nbsp; Geoserver</li>
+					<li class="li_map"> &nbsp; PostGIS, SQLite Spatial, GSON, GML</li>
+					<li class="li_map"> &nbsp; QGIS, ArcGIS</li>
+				</ul>
+		</div>
+
+		<div id="education" class="chapt">
+			<header>	<h3>Education</h3>		</header>
+			<div class="chapt_div">
+				<div class="chapt_grid-1" >	1999 - 2004  </div>
+				<div class="chapt_grid-2"> State Agricultural Academy </div>
+				<div class="chapt_grid-2"> Land Management Faculty </div>
+
+			</div>
+		</div>
+
+		<div id="lang" class="chapt">
+			<header>	<h3>Languages</h3>		</header>
+			<div class="chapt_div chapt_lang">
+				<div class="chapt_grid-1r" >	Belarusian </div>
+				<div class="chapt_grid-2">
+					<div class="lang" >
+						<div style="width: 115px;">&nbsp;</div>
+					</div>
+				</div>
+
+				<div class="chapt_grid-1r" >	Russian </div>
+				<div class="chapt_grid-2">
+					<div class="lang" >
+						<div style="width: 140px;">&nbsp;</div>
+					</div>						
+				</div>
+
+				<div class="chapt_grid-1r" >	English </div>
+				<div class="chapt_grid-2">
+					<div class="lang" >
+						<div style="width: 15px;">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>
+	</div>
 	<!-- =========================================================== -->
 		<div id="RCont">
 			<div id="proj" class="chapt">
@@ -262,14 +247,32 @@ while( rso.next() ){	// только для выбранных
 				<br/>
 		</div>
 	<!-- =========================================================== -->
-		<footer class="footer">
-			<div class="ft_text_left">
-			<b>GitHub</b>
-			<a href="https://kostyakorshunov.github.io/rsschool-cv/"
-					title="GitHub">
-				<img class="link_img" src="./images/github.png" alt="" >
-				https://kostyakorshunov.github.io/rsschool-cv/
+<!--		<footer class="footer">
+			<a href="https://rs.school/js/">
+				<img class="rss_img" src="./images/rs_school_js.svg" alt="" >
 			</a>
+			<div class="w_10p" > &nbsp; </div>
+			<div class="ft_text"> 2021 © K.Korshunov </div>	
+			
+		</footer>	--><!--  ©  -->
+		<footer class="footer">
+			<a href="https://rs.school/js/">
+				<img class="rss_img" src="./images/rs_school_js.svg" alt="" >
+			</a>
+
+			<div class="w_10p" > &nbsp; </div>
+
+			<div class="ft_text"> 2021 © K.Korshunov </div>	
+
+			<div class="w_10p" > &nbsp; </div>
+
+			<div class="ft_text">
+				<b>GitHub</b>
+				<a href="https://kostyakorshunov.github.io/rsschool-cv/"
+						title="GitHub">
+					<img class="link_img" src="./images/github.png" alt="" >
+					https://kostyakorshunov.github.io/rsschool-cv/
+				</a>
 			</div>
 		</footer>
 	</div>
@@ -277,12 +280,13 @@ while( rso.next() ){	// только для выбранных
 	<!-- ========				Empty Right					======== -->
 	<div id="ERight" class="main-clm">
 	</div>
-	<footer id="footer_small">
+	<!-- =========================================================== -->
+<!--	<footer id="footer_small">
 		<a href="https://rs.school/js/">
 			<img class="rss_img" src="./images/rs_school_js.svg" alt="" >
 		</a>
 			&nbsp;
 		 2021 © K.Korshunov
-	</footer>
+	</footer>			-->
 </body>
 </html>
