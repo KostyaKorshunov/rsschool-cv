@@ -15,7 +15,7 @@ body>* {
 }
 #center {
 	display: grid;
-	flex: 4;
+	flex: 3;
 	grid-template-columns: 400px auto;
 	grid-template-rows: 360px auto;
 	padding-bottom:60px;	/*for footer */
@@ -156,7 +156,8 @@ body>* {
 				 1px 2px 3px hsla(130, 0%, 10%, 0.8);	
 }
 .info_link a:hover {
-	color: hsla(130, 0%, 30%, 0.60);
+	color: hsla(130, 0%, 0%, 0.99);
+	text-shadow: none;
 }
 .link_img {
 	width: 20px;
@@ -232,8 +233,11 @@ header h3 {
 .chapt_grid-1r {
 	text-align: right;
 }
+.chapt header {
+	margin-bottom: 20px;
+}
 .chapt ul {
-	margin: 10px 10px 4px 40px;
+	margin: 10px 10px 12px 40px;
 }
 .li_tech {
 	list-style-type: "\1F4BB";
